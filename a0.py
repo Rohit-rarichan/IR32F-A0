@@ -9,10 +9,28 @@
 # 36126645
 def main():
     n = int(input())
-    s = " "
+    s = "  "
     start = "+"
     if n > 0 and n < 1000:
         for i in range(0, n):
             start+= output(i,s)
+            
+    print(start)
+
+def output(i, s) -> str:
+    output = i * s
+    return "-+\n" + output + "| |\n" + output + "+-+"
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
 
 
